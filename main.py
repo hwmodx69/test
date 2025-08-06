@@ -9,19 +9,14 @@ from pyrogram import Client as Bot
 from config import API_HASH, API_ID, BG_IMAGE, BOT_TOKEN
 
 # --- Time sync attempt ---
-print("[INFO]: Attempting to sync time...")
-os.system("apk add --no-cache busybox-extras || true")
-os.system("ntpd -q -p pool.ntp.org || true")
-time.sleep(2)
-
-# --- Download foreground image ---
-try:
-    response = requests.get(BG_IMAGE)
-    with open("./etc/foreground.png", "wb") as file:
-        file.write(response.content)
-except Exception as e:
-    print(f"[WARNING]: Could not download BG image - {e}")
-
+print("[INFO]: Attempting time sync...")
+for i in range(3):
+    try:
+        os.system("ntpdate -u pool.ntp.org || busybox ntpd -q -p pool.ntp.org || true")
+        print(f"[INFO]: Time sync attempt {i+1} done.")
+    except Exception as e:
+        print(f"[WARNING]: Time sync failed: {e}")
+    time.sleep(2)
 # --- Start Bot ---
 bot = Bot(
     ":memory:",
