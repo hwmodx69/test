@@ -32,7 +32,8 @@ bot = Bot(
 )
 
 print(f"[INFO]: VEEZ MUSIC v{__version__} STARTED !")
-
+# Try syncing time inside Python (fallback)
+os.system("ntpdate -u pool.ntp.org || true")
 bot.start()
 run()
 idle()
