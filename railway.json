@@ -1,14 +1,14 @@
 {
   "build": {
     "env": {
-      "API_HASH": "",
-      "API_ID": "",
-      "ASSISTANT_SESSION": "",
-      "BOT_TOKEN": "",
-      "OWNER_ID": "",
-      "MongoDB_url": "",
-      "ASSISTANT_USERNAME": "",
-      "ASSISTANT_CHAT_ID": ""
+      "API_HASH": "2ce43eaffaae1fc4016406b5b374cef9",
+      "API_ID": "2882780",
+      "ASSISTANT_SESSION": "BQFpfeMAf7WNccgJxq2i__qVfHun_asVRRWjxY4-JdUO2S47JPBB-CTGEtOAcJqpMc1-zWJ7pCC6PtJl9SOn4WdgbpZxC8fHI0dGVLUiZY2GDVAp-RpQiL5-AHIw6NsIDxkkvQQ891oc7cLpxO065AUcVGUho3K_IcpaTvtPkVAbQ-H1QeNoXMYd-2xrPLkNdfZdJJ6oNj-snJaKIDxFxyg0eQUWc1aXX03m-nJIklUz1_4TlFY0VPTXwZeraQN7DLjGDGMg0m39o4uvn--PUN9dDiqEGbUcHgSGgMbi9jsJcjKTyDWXLFi-9vmToX3LgTzzcx7yKfSf3DlMxzvNsC45IUE0_gAAAAGxzy-yAA",
+      "BOT_TOKEN": "8423546049:AAEaJc1DU7go21JUhj0tkaaIIWnKxhjLUVY",
+      "OWNER_ID": "5575457497",
+      "MongoDB_url": "mongodb+srv://bhiwandimarts:ywTwEIUQtv7C2ApP@cluster0.5fginbr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+      "ASSISTANT_USERNAME": "Hw_Op",
+      "ASSISTANT_CHAT_ID": "-1002842347858"
     }
   },
   "deploy": {
