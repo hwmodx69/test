@@ -1,0 +1,19 @@
+{
+  "build": {
+    "env": {
+      "API_HASH": "",
+      "API_ID": "",
+      "ASSISTANT_SESSION": "",
+      "BOT_TOKEN": "",
+      "OWNER_ID": "",
+      "MongoDB_url": "",
+      "ASSISTANT_USERNAME": "",
+      "ASSISTANT_CHAT_ID": ""
+    }
+  },
+  "deploy": {
+    "startCommand": "python main.py",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10
+  }
+}
