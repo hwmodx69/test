@@ -1,5 +1,5 @@
 # Use a newer base image to avoid buster repo issues
-FROM nikolaik/python-nodejs:python3.10-nodejs17-bullseye
+FROM nikolaik/python-nodejs:python3.10-nodejs17-bookworm
 
 # Avoid interactive prompts
 ENV DEBIAN_FRONTEND=noninteractive
